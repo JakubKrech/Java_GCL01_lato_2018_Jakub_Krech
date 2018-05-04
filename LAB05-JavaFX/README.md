@@ -1,1 +1,3 @@
-LAB05-JavaFx
+**LAB05-JavaFx**
+
+Temat nr 1: Zegar Analogowy
