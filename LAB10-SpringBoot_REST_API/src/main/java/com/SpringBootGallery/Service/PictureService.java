@@ -23,7 +23,7 @@ public class PictureService {
         return this.pictureDao.getPictureByIndex(index);
     }
 
-    public void removeStudentByIndex(int index) {
+    public void removePictureByIndex(int index) {
         this.pictureDao.removePictureByIndex(index);
     }
 

@@ -3,7 +3,6 @@ package com.SpringBootGallery.Controller;
 import com.SpringBootGallery.Entity.Picture;
 import com.SpringBootGallery.Service.PictureService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -42,7 +41,7 @@ public class PictureController {
         HashMap<String, String> result = new HashMap<>();
 
         if(pictureService.pictureDao.pictures.containsKey(index)) {
-            pictureService.removeStudentByIndex(index);
+            pictureService.removePictureByIndex(index);
             result.put("result:", "true");
             return result;
         }
